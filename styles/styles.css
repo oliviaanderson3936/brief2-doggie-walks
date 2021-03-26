@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700&display=swap');
+
+#page { max-width: 1200px; margin: 20px auto; position: relative; background-color: #ffffff;}
+html { background-image: url(../images/background.jpg); }
+/* font */
+body {font-family: 'Spartan', sans-serif; font-size: 16px; color: #333333;}
+h1 {font-size: 2.8em;}
+h2 {font-size: 1.6em;}
+h3 {font-size: 1.3em;}
+p {font-size: 1em;}
+a {color: #34769c;}
+a:visited {color: #759cc9;}
+
+/* header */
+header {
+    height: 170px; 
+    position: relative;
+    padding-left: 50px;
+}
+
+/* navigation */
+nav {
+    float: right;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 650px;
+    text-align: center;
+}
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 120px;
+    position: relative;
+}
+nav ul li a:hover {
+    color: #34769c;
+    font-weight: bold;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+nav ul ul li {
+    position: relative;
+}
+nav > ul {
+    padding-left: 0px;
+}
+nav > ul > li {float: left;}
+nav > ul > li > a {
+    width: 100%; 
+    padding: 10px 20px 15px 20px;
+}
+
+/* section */
+section {padding: 10px 30px; text-align: left; }
+
+/* section - home1 */
+section.home_1 #images {
+    padding-top: 20px;
+}
+
+/* section - home2 */
+section.home_2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+section.home_2 aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+/* section - home_3 */
+section.home_3 {
+    align-content: center;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+/* section - about3 */
+section.about3 {
+    width: 50%;
+    height: 420px;
+    float: left;
+    background-color: #ffffff;
+}
+#about {
+    padding-top: 60px;
+    text-decoration: underline #aec6cf 2px ;
+}
+
+/*section - about4 */
+section.about4 {
+    width: 40%;
+    height: 420px;
+    float: left;
+    background-color: #ffffff;
+}
+
+/* footer */
+footer {
+    height: 100px;
+    width: auto;
+    float: left;
+    clear: both;
+    padding-left: 50px;
+    padding-top: 20px;
+}
