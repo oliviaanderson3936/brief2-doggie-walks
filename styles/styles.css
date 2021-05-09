@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700&display=swap');
 
-#page { max-width: 1200px; margin: 20px auto; position: relative; background-color: #ffffff;}
+#page { max-width: 1200px; margin: 20px auto; position: relative; background-color: #ffffff; overflow: visible;}
 html { background-image: url(../images/background.jpg); }
 /* font */
 body {font-family: 'Spartan', sans-serif; font-size: 16px; color: #333333;}
@@ -8,14 +8,18 @@ h1 {font-size: 2.8em;}
 h2 {font-size: 1.6em;}
 h3 {font-size: 1.3em;}
 p {font-size: 1em;}
-a {color: #34769c;}
-a:visited {color: #759cc9;}
+a {color: #4A3C33}
 
 /* header */
 header {
-    height: 170px; 
+    height: 180px; 
     position: relative;
     padding-left: 50px;
+    
+}
+#logo {
+    width: 180px;
+    padding-top: 10px;
 }
 
 /* navigation */
@@ -45,7 +49,7 @@ nav ul li a {
     position: relative;
 }
 nav ul li a:hover {
-    color: #34769c;
+    color: #EB7859;
     font-weight: bold;
 }
 nav ul li:hover > ul {
@@ -69,36 +73,21 @@ nav > ul > li > a {
 }
 
 /* section */
-section {padding: 10px 30px; text-align: left; }
-
-/* section - home1 */
+section {padding: 10px 30px; text-align: center;}
 section.home_1 #images {
     padding-top: 20px;
 }
-
-/* section - home2 */
 section.home_2 {
     margin-top: 20px;
     margin-bottom: 30px;
     padding: 10px;
     background-color: #ffffff;
 }
-section.home_2 aside {
-    width: 33%;
-    float: left;
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-}
-
-/* section - home_3 */
 section.home_3 {
     align-content: center;
     margin-top: 10px;
     background-color: #ffffff;
 }
-
-/* section - about3 */
 section.about3 {
     width: 50%;
     height: 420px;
@@ -109,21 +98,109 @@ section.about3 {
     padding-top: 60px;
     text-decoration: underline #aec6cf 2px ;
 }
-
-/*section - about4 */
 section.about4 {
     width: 40%;
     height: 420px;
     float: left;
     background-color: #ffffff;
 }
-
-/* footer */
-footer {
-    height: 100px;
-    width: auto;
-    float: left;
-    clear: both;
-    padding-left: 50px;
-    padding-top: 20px;
+.team {
+    overflow: hidden;
 }
+.services {
+    overflow: hidden;
+}
+#address {
+    width: 25%;
+    float: left;
+}
+#form {overflow: hidden;}
+/*aside*/
+#team_pics {
+    float: left; 
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 5px;
+    height: 250px;
+}
+section.home_2 aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+#service {
+    width: 27%;
+    margin-left: 35px;
+    margin-right: 35px;
+    float: left;
+}
+#message {
+    background-color: #aec6cf;
+    margin-top: 10px;
+}
+
+/*gallery*/
+#gallery {
+    padding: 15px 40px;
+}
+
+/*form - sets the dimensions to fit the form onto the contact page as well as the colours that are to be used throughout the form. Also sets formatting for what happens when elements of the form are focussed on and hovered over*/
+form {
+    width: 600px;
+    float: right;
+    padding-bottom: 15px;
+}
+form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.feedback-input {
+    color: #4A3C33;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid ;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  .feedback-input:focus { border:2px solid #EB7859; }
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  #submit {
+      background:#EB7859;
+      border-radius: 5px;
+      padding: 10px 100px;
+      transition: all 0.3s;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  #submit:hover { background: #aec6cf; }
+
+  /*footer*/
+  footer {
+      background-color: #EB7859;
+      width: 1200px;
+      height: 100px;
+      font-size: 10px;
+      overflow: hidden;
+  }
+  #open {
+      padding-left: 50px;
+      width: 45%;
+      float: left;
+  }
+  #details {
+      width: 45%;
+      float:right;
+  }
