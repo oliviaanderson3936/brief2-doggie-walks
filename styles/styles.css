@@ -2,7 +2,7 @@
 
 #page { max-width: 1200px; margin: 20px auto; position: relative; background-color: #ffffff; overflow: visible;}
 html { background-image: url(../images/background.jpg); }
-/* font */
+/* fonts - the font families, font colours and font sizes are identified */
 body {font-family: 'Spartan', sans-serif; font-size: 16px; color: #333333;}
 h1 {font-size: 2.8em;}
 h2 {font-size: 1.6em;}
@@ -10,19 +10,19 @@ h3 {font-size: 1.3em;}
 p {font-size: 1em;}
 a {color: #4A3C33}
 
-/* header */
+/* header - The header properties are identified and the logo image is set to fit within the header */
 header {
     height: 180px; 
     position: relative;
     padding-left: 50px;
-    
 }
 #logo {
     width: 180px;
     padding-top: 10px;
 }
 
-/* navigation */
+/* navigation - the navigation bar properties have been set to ensure that all page links 
+can be seen and are aligned correctly and the drop down works within the header*/
 nav {
     float: right;
     position: absolute;
@@ -72,7 +72,8 @@ nav > ul > li > a {
     padding: 10px 20px 15px 20px;
 }
 
-/* section */
+/* section - Identifies the properties for all of the sections used within the website.
+ Idientifies (if needed) the height, width, background colour, padding and margins*/
 section {padding: 10px 30px; text-align: center;}
 section.home_1 #images {
     padding-top: 20px;
@@ -115,7 +116,9 @@ section.about4 {
     float: left;
 }
 #form {overflow: hidden;}
-/*aside*/
+
+/*aside - Identifies the properties for all of the aside parts within sections used throughout the website.
+ Idientifies (if needed) the height, width, background colour, padding and margins */
 #team_pics {
     float: left; 
     margin-left: 40px;
@@ -141,7 +144,7 @@ section.home_2 aside {
     margin-top: 10px;
 }
 
-/*gallery*/
+/*gallery - identifies the padding required for the gallery for it to fit within the page boundaries*/
 #gallery {
     padding: 15px 40px;
 }
@@ -187,7 +190,8 @@ form h2 {
   }
   #submit:hover { background: #aec6cf; }
 
-  /*footer*/
+  /*footer - identifies the sizeable properties and visual properties for the footer section of the website.
+    Also, identifies the properties for the divs within the footer that hold the information required by the brief.*/
   footer {
       background-color: #EB7859;
       width: 1200px;
